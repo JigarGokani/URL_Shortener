@@ -10,6 +10,7 @@ exports.createURL = async (req,res)=>{
         shortUrl: generatedurl,
         requiredUrl: body.url,
         VisitHistory:[],
+        createdBy:req.user._id,
 
     })
 
